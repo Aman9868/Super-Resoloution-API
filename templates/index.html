@@ -1,0 +1,12 @@
+<html>
+    <head>
+        <title>SRGAN Upscale Image</title>
+    </head>
+    <body>
+        <h1>SRGAN Upscale Image</h1>
+        <form action="{{ url_for('srgan_upscale_api') }}" method="post" enctype="multipart/form-data">
+            <input type="file" name="image">
+            <input type="submit" value="Upscale Image">
+        </form>
+    </body>
+</html>

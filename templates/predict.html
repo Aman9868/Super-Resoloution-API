@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Generated High Resolution Image</title>
+    </head>
+    <body>
+    <div style="display:grid;grid-template-columns:1fr 1fr;column-gap:5px;">
+        <div>
+        <h1>Original Image</h1>
+        <img src="{{ url_for('static', filename='input/input_image.jpg') }}" alt="Low Resolution Image"></div>
+        <div>
+            <h1>Predicted High Resolution Image</h1>
+          <img src="{{ url_for('static', filename='output/output_image.jpg') }}" alt="Generated High Resolution Image">
+        </div>
+    </div>
+    </body>
+</html>
